@@ -7,16 +7,16 @@ using System.Text;
 
 namespace DataAccess.Concrete.InMemory
 {
-    public class InMemoryCarDal : ICarDal      
+    public class InMemoryCarDal   
     {
         List<Car> _cars;
 
         public InMemoryCarDal() {
             _cars = new List<Car>
             {
-                new Car{Id=1,BrandId=1,ColorId=2,DailyPrice=150,ModelYear="11-2-2020",Descpription="2020 Model Renault" },
-                new Car{Id=2,BrandId=2,ColorId=1,DailyPrice=450,ModelYear="7-1-2010",Descpription="2010 Model Peugeot" },
-                new Car{Id=3,BrandId=3,ColorId=3,DailyPrice=350,ModelYear="19-6-2009",Descpription="2009 Model Fiat" }
+                new Car{Id=1,BrandId=1,ColorId=2,DailyPrice=150,ModelYear="11-2-2020",Description="2020 Model Renault" },
+                new Car{Id=2,BrandId=2,ColorId=1,DailyPrice=450,ModelYear="7-1-2010",Description="2010 Model Peugeot" },
+                new Car{Id=3,BrandId=3,ColorId=3,DailyPrice=350,ModelYear="19-6-2009",Description="2009 Model Fiat" }
             };
         
         }
@@ -49,7 +49,7 @@ namespace DataAccess.Concrete.InMemory
             carToUpdate.BrandId = car.BrandId;
             carToUpdate.ColorId = car.ColorId;
             carToUpdate.DailyPrice = car.DailyPrice;
-            carToUpdate.Descpription = car.Descpription;
+            carToUpdate.Description = car.Description;
             carToUpdate.ModelYear = car.ModelYear;
         }
     }
